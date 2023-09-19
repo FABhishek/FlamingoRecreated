@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ExploreCardsComponent } from './Components/explore-cards/explore-cards.component';
+import { TruncateLocationPipe } from './Pipes/truncate-location.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExploreCardsComponent,
+    TruncateLocationPipe
   ],
   imports: [
     BrowserModule,
