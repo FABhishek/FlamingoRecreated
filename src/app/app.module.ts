@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExploreCardsComponent } from './Components/explore-cards/explore-cards.component';
 import { TruncateLocationPipe } from './Pipes/truncate-location.pipe';
+import { CarouselComponent } from './carousel/carousel.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExploreCardsComponent,
-    TruncateLocationPipe
+    TruncateLocationPipe,
+    CarouselComponent,
+    NavigationBarComponent
   ],
   imports: [
     BrowserModule,
