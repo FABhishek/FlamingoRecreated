@@ -1,15 +1,27 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DetailsComponentComponent } from './details-component/details-component.component';
+import { ExploreCardsComponent } from './components/explore-cards/explore-cards.component';
+import { TruncateLocationPipe } from './pipes/truncate-location.pipe';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { DetailsComponentComponent } from './components/search-flights/details-component.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
+import { FlightDetailComponent } from './components/flight-detail/flight-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DetailsComponentComponent
+    ExploreCardsComponent,
+    TruncateLocationPipe,
+    CarouselComponent,
+    NavigationBarComponent,
+    DetailsComponentComponent,
+    FooterComponent,
+    FlightDetailComponent
+
   ],
   imports: [
     BrowserModule,
