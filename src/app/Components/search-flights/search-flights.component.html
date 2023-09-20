@@ -43,7 +43,7 @@
                 <input type="date" required class="form-control" formControlName="departureDate">
                 <div *ngIf="(submitted || f['departureDate'].touched) && f['departureDate'].errors"
                   class="text-danger small">
-                  <span *ngIf="f['departureDate'].errors?.['required']">Departure Date is requied</span>
+                  <span *ngIf="f['departureDate'].errors?.['required']">Departure Date is required</span>
                   <span *ngIf="f['departureDate'].errors?.['invalidDate']">You chose the wrong date, can't book the
                     flights for previous date</span>
                 </div>

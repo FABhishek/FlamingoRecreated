@@ -3,9 +3,9 @@ import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/fo
 import { CheckSeatLimit, dateValidatorDepart, dateValidatorReturn } from 'src/app/shared/flightDetailValidator';
 
 @Component({
-  selector: 'app-details-component',
-  templateUrl: './details-component.component.html',
-  styleUrls: ['./details-component.component.scss']
+  selector: 'app-search-flights-component',
+  templateUrl: './search-flights.component.html',
+  styleUrls: ['./search-flights.component.scss']
 })
 export class DetailsComponentComponent implements OnInit {
 
