@@ -1,10 +1,13 @@
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-  <a class="navbar-brand" href="#">FLAMINGO Airlines</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+ <nav class="navbar navbar-expand-lg navbar-light bg-primary ">
+   <div class="container-fluid">
+  <a class="navbar-brand" href="#">
+    <img src = "../../assets/aviation_logo-19.png" alt="Flamingo Airlines" width="40" height="40" class="navbar-logo">
+    Flamingo Airlines</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" (click)="toggleCollapsed()" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home</a>
@@ -17,11 +20,12 @@
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+      <button class="btn btn-primary  my-2 my-sm-0 " type="submit" >Login</button>
     </form>
+    </div>
   </div>
-</nav> -->
-<nav class="navbar">
+</nav>
+ <!-- <nav class="navbar">
   <div class="logo">
       <img src= "../../assets/aviation_logo-19.png" alt="Flamingo Airlines ">
       <span class="brand-name">Flamingo Airlines</span>
@@ -32,4 +36,5 @@
       <li><a href="#">About</a></li>
   </ul>
   <button class="login-btn" type = "submit">Login</button>
-</nav>
+</nav> -->  
+
