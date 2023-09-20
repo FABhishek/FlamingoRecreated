@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule , ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ExploreCardsComponent } from './Components/explore-cards/explore-cards.component';
 import { TruncateLocationPipe } from './Pipes/truncate-location.pipe';
 import { CarouselComponent } from './carousel/carousel.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { BillingcardComponent } from './Components/billingcard/billingcard.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +15,14 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     ExploreCardsComponent,
     TruncateLocationPipe,
     CarouselComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    BillingcardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
