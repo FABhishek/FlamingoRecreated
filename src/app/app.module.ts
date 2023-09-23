@@ -12,6 +12,8 @@ import { DetailsComponentComponent } from './components/search-flights/search-fl
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { FlightDetailComponent } from './components/flight-detail/flight-detail.component';
+import { AdminPanelComponent } from './components/admin-panel/admin-panel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { FlightDetailComponent } from './components/flight-detail/flight-detail.
     BillingcardComponent,
     DetailsComponentComponent,
     FooterComponent,
-    FlightDetailComponent
+    FlightDetailComponent,
+    AdminPanelComponent,
+
+   
 
   ],
   imports: [
@@ -31,6 +36,7 @@ import { FlightDetailComponent } from './components/flight-detail/flight-detail.
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
